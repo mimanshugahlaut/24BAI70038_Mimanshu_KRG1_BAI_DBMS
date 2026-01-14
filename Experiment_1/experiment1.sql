@@ -1,7 +1,8 @@
 CREATE TABLE books(
 	id INT PRIMARY KEY,
 	name VARCHAR(50) NOT NULL,
-	author_name VARCHAR(50) NOT NULL
+	author_name VARCHAR(50) NOT NULL,
+	count INT CHECK(count>0)
 )
 
 CREATE TABLE library_visitors(
@@ -20,39 +21,24 @@ CREATE TABLE book_issue(
 	book_issue_date DATE NOT NULL
 )
 
-INSERT INTO books VALUES(1, 'Harry Potter', 'R. Snape')
-
-ALTER TABLE books ADD count INT CHECK(count>=1)
+INSERT INTO books VALUES(1, 'Harry Potter', 'R. Snape', 1)
+INSERT INTO books VALUES(2, 'Avengers', 'Stan Lee', 3)
 
 SELECT * FROM books
 
-UPDATE books SET count=1 WHERE id=1
+INSERT INTO library_visitors VALUES(101, 'Robert', 20, 'abc@gmail.com')
 
-
-
--- SELECT * FROM library_visitors
-
-INSERT INTO library_visitors VALUES(101, 'Robert', 20, 'Robert@gmail.com')
+UPDATE library_visitors SET email='Robert@gmail.com' WHERE user_id = 101
 
 SELECT * FROM library_visitors
-
-ALTER TABLE library_visitors DROP COLUMN email
-
-SELECT * FROM library_visitors
-
-ALTER TABLE library_visitors ADD COLUMN email VARCHAR(40) UNIQUE
-
-SELECT * FROM library_visitors
-
-UPDATE library_visitors SET email='Robert@gmail.com'
-
-SELECT * FROM library_visitors
-
-
 
 INSERT INTO book_issue VALUES(1234,1,101,'2026-01-07')
 
 SELECT * FROM book_issue
+
+DELETE FROM books WHERE id = 2
+
+SELECT * FROM books
 
 CREATE ROLE librarian WITH LOGIN PASSWORD 'PASSWORD'
 
