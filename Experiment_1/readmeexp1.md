@@ -4,7 +4,11 @@ Experiment: Library Management System Implementation
 The primary goal of this experiment was to model a relational database for a Library Management System.
 This included designing normalized tables, applying integrity constraints, linking related entities, and implementing access control using role-based permissions.
 
-2. Objective of the Session:
+2. Software Requirements:
+
+   • Database: PostgreSQL Database (PgAdmin)
+   
+3. Objective of the Session:
 
 By the end of this practical task, the following objectives were successfully met:
 
@@ -16,7 +20,7 @@ By the end of this practical task, the following objectives were successfully me
 
 •	Ensured referential integrity among interconnected tables (books, library_visitors, and book_issue).
 
-3. Practical / Experiment Steps:
+4. Practical / Experiment Steps:
 
 The implementation process consisted of the following major tasks:
 
@@ -30,7 +34,7 @@ The implementation process consisted of the following major tasks:
 
 •	Role & Security Setup: Created a database role for library staff and granted required privileges using DCL commands.
 
-4. Procedure Followed
+5. Procedure Followed
 
 The experiment followed these execution steps:
 
@@ -52,7 +56,7 @@ The experiment followed these execution steps:
 
 •	Documentation: Saved SQL script and captured screenshots of outputs.
 
-5. I/O Analysis (Input / Output Analysis)
+6. I/O Analysis (Input / Output Analysis)
 
 Input SQL Commands
 
@@ -148,7 +152,7 @@ After revocation, librarian could no longer perform operations on the books tabl
 •	We also confirmed the permissions of the role “librarian” by checking the table privileges.  
 <img width="797" height="992" alt="image" src="https://github.com/user-attachments/assets/b664e0b0-fb56-46aa-bc38-c08149f4e577" />
 
-6. Learning Outcome
+7. Learning Outcome
 From this practical, the following knowledge and skills were gained:
 
 •	Schema Design Insight: Learned how relational constraints like CHECK, UNIQUE, and FOREIGN KEY contribute to logical data consistency.
