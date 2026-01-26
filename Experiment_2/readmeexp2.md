@@ -4,7 +4,11 @@ Experiment 2: Advanced Data Aggregation and Filtering
 
 The objective of this experiment is to perform advanced data analysis in SQL using grouping and filtering techniques. The practical focuses on applying aggregate functions along with GROUP BY, HAVING, and ORDER BY clauses to analyze departmental salary data from an employee table.
 
-2. Objective of the Session
+2. Software Requirements:
+
+   • Database: PostgreSQL Database (PgAdmin)
+   
+3. Objective of the Session
 
 After completing this experiment, the following objectives were fulfilled:
 
@@ -16,7 +20,7 @@ After completing this experiment, the following objectives were fulfilled:
 
 •	Implemented sorting mechanisms on aggregated results using the ORDER BY clause.
 
-3. Practical / Experiment Steps
+4. Practical / Experiment Steps
    
 The experiment was carried out through the following steps:
 
@@ -30,7 +34,7 @@ The experiment was carried out through the following steps:
 
 •	Combined Query Execution: Executed a single SQL query incorporating WHERE, GROUP BY, HAVING, and ORDER BY clauses for refined output.
 
-4. Procedure of the Practical
+5. Procedure of the Practical
    
 The following procedure was adopted to perform the experiment:
 
@@ -50,7 +54,7 @@ The following procedure was adopted to perform the experiment:
 
 •	Documentation: Captured screenshots of outputs and saved the SQL script.
 
-5. I/O Analysis (Input / Output Analysis)
+6. I/O Analysis (Input / Output Analysis)
    
 Input Queries
 
@@ -141,7 +145,7 @@ The employee table was created successfully with the following attributes:
  <img width="872" height="608" alt="image" src="https://github.com/user-attachments/assets/2210b4bc-5374-468e-9420-12bf5a2f7644" />
 
 
-6. Learning Outcome
+7. Learning Outcome
    
 •	Learned to use aggregate functions like AVG() for data analysis.
 
